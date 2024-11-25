@@ -1,0 +1,111 @@
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.1875rem;
+  position: relative;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4.625rem;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.nav-buttons{
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.nav-buttons .signin {
+    position: relative;
+    padding-left: 2.375rem;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    background-color: transparent;
+    color: var(--para-color);
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .signin:hover{
+    color:  var(--primary-bg-color);
+  }
+
+  .nav-buttons .signin::before {
+    content: '';
+    position: absolute;
+    left: 1px; 
+    width: 26px;
+    height: 26px;
+    background-image: url('/src/assets/User.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .hamburger, .mobile-nav{
+    display: none;
+  }
+  
+  .mobile-nav.mobile-links{
+    position: absolute;
+    padding: 1rem;
+    right: 1.25rem;
+    top: 5rem;
+    background-color: #F5F4FF;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .create-account{
+    margin-top: 5rem;
+    color: #4328EB;
+  }
+
+  @media(max-width: 1000px){
+
+    .nav-links, .signup{
+        display: none;
+    }
+
+    .signup{
+      margin-top: 1rem;
+    }
+
+    .nav-buttons .signin {
+        padding-left: 0; 
+        padding-right: 0;
+        font-size: 0; 
+        width: 2rem; 
+        height: 2rem; 
+      }
+    
+      .nav-buttons .signin::before {
+        width: 2rem; 
+        height: 2rem; 
+        left: 0; 
+      }
+
+      .nav-buttons{
+        gap: 1.25rem;
+      }
+
+      .hamburger{
+        display: block;
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+  }

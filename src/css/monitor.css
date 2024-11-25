@@ -1,0 +1,104 @@
+.monitor-website-section {
+    background-image: url('/src/assets/gradient-bg-monitor.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    padding: 5.5rem 10rem;
+    min-height: 30.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 1rem;
+    /* width: 100%; */
+}
+
+.monitor-website-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.monitor-heading {
+    font-size: 3.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+}
+
+.monitor-para {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+
+.monitor-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.monitor-main-cta {
+    background-color: #fff;
+    color: #EB2891;
+    white-space: nowrap;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.monitor-secondy-cta {
+    background-color: transparent;
+    border: none;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--white-color);
+    position: relative;
+    padding-right: 2.375rem;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.monitor-secondy-cta::after {
+    content: '';
+    position: absolute;
+    right: 1px;
+    width: 28px;
+    height: 28px;
+    background-image: url('/src/assets/pink\ arrow.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+@media(max-width: 990px) {
+    .monitor-website-section {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .monitor-website-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2rem;
+    }
+
+    .monitor-heading {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .monitor-para {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+@media(max-width: 672px) {
+    .monitor-website-wrapper {
+        margin-left: 0rem;
+    }
+}

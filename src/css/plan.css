@@ -1,0 +1,123 @@
+
+
+.plans-section{
+    margin-top: 3.75rem;
+    margin-bottom: 7.5rem;
+    width: 100%;
+}
+
+.plans-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.plans-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.plan-heading{
+    text-align: center;
+}
+
+.plan-para{
+    text-align: center;
+}
+
+.plan-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.plan-card{
+    background-color: #F5F4FF;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 8px;
+    max-width: 25.6875rem;
+}
+
+
+.top-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.top-content h6{
+    color: #4328EB;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.plan-price{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #172026;
+}
+
+.plan-price span{
+    color: #5F7896;
+}
+
+.card-points{
+    padding-bottom: 5rem;
+}
+
+.free-trial-cta{
+    padding: 0.875rem 9rem;
+    background-color: #fff;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4328EB;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.business-card{
+    background-color: #4328EB;
+    padding-right: 1rem;
+}
+
+.top-content-business{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.top-content-business h6{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.business-price, .business-para, .business-point-text{
+    color: white;
+}
+
+.business-points{
+    gap: 14px;
+    padding-bottom: 0;
+}
+
+
+@media(max-width: 425px){
+    .plan-card{
+        max-width: 15rem;
+    }
+
+    .free-trial-cta{
+        padding: 0.875rem 2rem;
+    }
+
+    .enterprise-points, .card-points{
+        padding-bottom: 1rem;
+    }
+}

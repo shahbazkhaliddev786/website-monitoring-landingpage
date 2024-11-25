@@ -1,0 +1,119 @@
+
+/* 
+  TODOS:
+    1. mobile-links displayed if page reload on desktop - solved
+    2. hero image and logos div is not well placed. and bg-gradient
+    3. Gradient isn't taking full width - solved
+    4. Extra spacing on top of sales section on smaller devices - (solved))
+    5. Extra space on bottom of cards - solved
+    6. last 2 sections responsiveness - solved
+    7. multi-carousel section - solved.
+*/
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --primary-color: #172026;
+  --para-color: #36485C;
+  --white-color: #ffff;
+  --heading-color: #172026;
+  --primary-bg-color: #4328EB;
+  --bg-color: #E3F1FF;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  font-size: 1rem;
+  color: var(--para-color);
+  font-weight: 500;
+  text-decoration: none;
+}
+a:hover {
+  color: #4328EB;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.common-container {
+  max-width: 100%;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+@media (max-width: 768px) {
+  .common-container {
+    margin-left: 1rem; 
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .common-container {
+    margin-left: 0.5rem; 
+    margin-right: 0.5rem;
+  }
+}
+
+
+.logo {
+  height: 2.1875rem;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+li{
+  list-style: none;
+}
+
+.common-para{
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--para-color);
+}
+
+.nav-link{
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--para-color);
+}
+
+.hero-heading{
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.common-heading{
+  font-size: 2.625rem;
+  font-weight: 500;
+  color: var(--heading-color);
+}
+
+@media(max-width:768px){
+  .common-container{
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+  }
+
+  .common-para{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+
+}
